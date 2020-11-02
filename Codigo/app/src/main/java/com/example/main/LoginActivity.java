@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         btnLogin = findViewById(R.id.LoginButton);
         btnRegistrar = findViewById(R.id.RegistrarButton);
         emailText = findViewById(R.id.emailText);
@@ -95,8 +96,12 @@ public class LoginActivity extends AppCompatActivity {
                     if (response.isSuccessful()){
                         Log.i(TAG,"Se logueó de forma exitosa.");
 
+                        Thread evento = new Thread(new RegistrarEvento("Login","El usuario "+emailText.getText().toString()+"se logueo de forma exitosa.",getApplicationContext()));
+                        evento.start();
+
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
+
                     }
                     else {
                         Gson gson = new Gson();

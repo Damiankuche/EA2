@@ -1,16 +1,19 @@
 package com.example.main.eventos;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class EventoResponse {
+public class EventoResponse <T>{
     @SerializedName("success")
+    @Expose
     private Boolean success;
 
     @SerializedName("env")
     private String env;
 
     @SerializedName("event")
-    private Event event;
+    @Expose
+    private T event;
 
     public Boolean getSuccess() {
         return success;
@@ -20,38 +23,22 @@ public class EventoResponse {
         return env;
     }
 
-    public Event getEvent() {
-        return event;
-    }
-
-    private class Event{
+    public class Event{
         @SerializedName("type_events")
+        @Expose
         private String type_events;
 
         @SerializedName("dni")
+        @Expose
         private Number dni;
 
         @SerializedName("description")
+        @Expose
         private String description;
 
         @SerializedName("id")
+        @Expose
         private Number id;
-
-        public String getType_events() {
-            return type_events;
-        }
-
-        public Number getDni() {
-            return dni;
-        }
-
-        public String getDescription() {
-            return description;
-        }
-
-        public Number getId() {
-            return id;
-        }
     }
 
 

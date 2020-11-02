@@ -2,6 +2,7 @@ package com.example.main;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -104,9 +105,14 @@ public class RegistroActivity extends AppCompatActivity {
                     String error;
 
                     if (response.isSuccessful()) {
+                        GlobalClass globalClass = (GlobalClass)getApplicationContext();
+                        globalClass.setToken(response.body().getToken());
+                        globalClass.setRefresh_token(response.body().getToken_refresh());
                         texto = "Cuenta creada";
                         Toast.makeText(RegistroActivity.this, texto, Toast.LENGTH_LONG).show();
-                        Log.i(TAG, response.body().getToken());
+                        Log.i(TAG, globalClass.getToken());
+                        Intent intent = new Intent(RegistroActivity.this, MainActivity.class);
+                        startActivity(intent);
                         finish();
                     } else {
 
