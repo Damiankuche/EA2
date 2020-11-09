@@ -8,11 +8,15 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class SensorActivity extends AppCompatActivity  implements SensorEventListener{
@@ -34,6 +38,8 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
     private float prevX = 0, prevY = 0, prevZ = 0;
     private float curX = 0, curY = 0, curZ = 0;
 
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
@@ -42,8 +48,10 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensor);
 
-        sm.registerListener( this, acSensor, SensorManager.SENSOR_DELAY_GAME);
-        sm.registerListener( this, prSensor, SensorManager.SENSOR_DELAY_GAME);
+        GlobalClass globalClass = (GlobalClass)getApplicationContext();
+
+        sm.registerListener(this, acSensor, SensorManager.SENSOR_DELAY_GAME);
+        sm.registerListener(this, prSensor, SensorManager.SENSOR_DELAY_GAME);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         btnAtras = findViewById(R.id.backButton);
@@ -62,7 +70,69 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
             }
         });
 
+        proximidadCheck.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    proximidadText.setText("Proximidad: ");
+
+                    Retrofit retrofitEvento = new Retrofit.Builder()
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .baseUrl(getString(R.string.retrofit_server)).build();
+
+
+                    Thread evento = new Thread(new RegistrarEvento("Sensor proximidad", "Se activó el sensor de proximidad.", getApplicationContext(), retrofitEvento));
+                    evento.start();
+                }
+                else {
+                    proximidadText.setText("");
+
+                    Retrofit retrofitEvento = new Retrofit.Builder()
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .baseUrl(getString(R.string.retrofit_server)).build();
+
+
+                    Thread evento = new Thread(new RegistrarEvento("Sensor proximidad", "Se desactivó el sensor de proximidad.", getApplicationContext(), retrofitEvento));
+                    evento.start();
+                }
+
+            }
+
+        });
+
+
+        acelerometroCheck.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //se guarda en el servidor
+                if (isChecked) {
+
+                    Retrofit retrofitEvento = new Retrofit.Builder()
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .baseUrl(getString(R.string.retrofit_server)).build();
+
+
+                    Thread evento = new Thread(new RegistrarEvento("Sensor acelerometro", "Se activó el acelerómetro.", getApplicationContext(), retrofitEvento));
+                    evento.start();
+                }
+                else {
+
+                    Retrofit retrofitEvento = new Retrofit.Builder()
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .baseUrl(getString(R.string.retrofit_server)).build();
+
+
+                    Thread evento = new Thread(new RegistrarEvento("Sensor acelerometro", "Se desactivó el acelerometro.", getApplicationContext(), retrofitEvento));
+                    evento.start();
+                }
+
+            }
+
+        });
+
     }
+
+
         @Override
         public void onSensorChanged(SensorEvent event) {
             synchronized (this) {

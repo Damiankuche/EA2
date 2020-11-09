@@ -5,6 +5,20 @@ import android.app.Application;
 public class GlobalClass extends Application {
     private String token;
     private String refresh_token;
+    private ListaSincronizada lista;
+    private boolean running;
+
+    public void setRunning(boolean running) {
+        this.running = running;
+    }
+
+    public boolean isRunning() {
+        return running;
+    }
+
+    public ListaSincronizada getLista() {
+        return lista;
+    }
 
     public String getToken() {
         return token;

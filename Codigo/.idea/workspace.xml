@@ -51,8 +51,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+            <state relative-caret-position="1611">
+              <caret line="126" column="62" lean-forward="true" selection-start-line="126" selection-start-column="62" selection-end-line="126" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="95" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3037#3072#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistrarEvento.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,23 +86,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistrarEvento.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="326">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1940#1997#0" expanded="true" />
+                <element signature="e#2633#4453#0" expanded="true" />
+                <element signature="e#2872#2907#0" expanded="true" />
+                <element signature="e#4452#4453#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/EventoService.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenErrorResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="119">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,18 +128,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/GlobalClass.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/LogActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="314">
+              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
-                <element signature="e#197#198#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#555#697#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,6 +157,7 @@
     <findStrings>
       <find>get</find>
       <find>retrofit_server</find>
+      <find>token</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,10 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/login/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/login/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/login/src/main/res/drawable/button_rounded_border.xml" />
-        <option value="$PROJECT_DIR$/login/src/main/res/drawable/button_rounded.xml" />
         <option value="$PROJECT_DIR$/login/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/login/src/main/java/com/example/login/LoginRequest.java" />
         <option value="$PROJECT_DIR$/login/build.gradle" />
@@ -146,7 +181,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/LoginRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/LoginResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/Registro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/services/LoginService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginErrorResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/services/RegistrationService.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -156,21 +190,33 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sensor.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/SensorInfoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sensor_info.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/SensorThread.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/SensorActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/RegistrarServidor.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoErrorResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/GlobalClass.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/services/EventoService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/SensorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/ListaSincronizada.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/GlobalClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/AlmacenarDatos.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_log.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/services/ActualizarTokenService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarToken.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenErrorResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/services/LoginService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/RegistrarEvento.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/LogActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/main/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -186,7 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -216,7 +262,21 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="main" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="token" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Main" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="main" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="eventos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Main" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="main" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Main" type="1abcf292:AndroidViewProjectNode" />
@@ -227,13 +287,24 @@
             </path>
             <path>
               <item name="Main" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Main" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="Main" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,11 +314,15 @@
     <property name="android.sdk.path" value="D:/AndroidSDK" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTest/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.main" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.main" />
     </key>
   </component>
@@ -402,6 +477,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49919224" visible="true" weight="0.21641791" />
@@ -413,15 +489,15 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49253732" weight="0.32936078" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49733475" weight="0.32936078" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49093816" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="TODO" order="2" sideWeight="0.49733475" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49573562" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="4" sideWeight="0.50959486" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5074627" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Android Profiler" order="5" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.48614073" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4978678" weight="0.36078006" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.4904051" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.48560768" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49413645" weight="0.36078006" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4978678" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49253732" weight="0.32936078" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32995737" />
@@ -430,6 +506,34 @@
       <window_info anchor="right" id="Assistant" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Preview" order="6" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49919224" visible="true" weight="0.21641791" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.50080776" side_tool="true" weight="0.21641791" />
+      <window_info id="Build Variants" order="4" sideWeight="0.50080776" side_tool="true" weight="0.21641791" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49093816" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49733475" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49573562" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5074627" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Android Profiler" order="5" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.48560768" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49413645" weight="0.36078006" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.4978678" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49253732" weight="0.32936078" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Assistant" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -443,21 +547,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistrarEvento.java</url>
-          <line>90</line>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/main/LoginActivity.java</url>
-          <line>101</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/main/MainActivity.java</url>
+          <line>105</line>
           <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/main/LoginActivity.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -466,6 +564,7 @@
         <watch expression="response.errorBody" />
         <watch expression="errorResponse" />
         <watch expression="response.body" />
+        <watch expression="evento.name" />
       </configuration>
     </watches-manager>
   </component>
@@ -492,78 +591,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/login/src/main/res/layout/activity_login.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/8b7bdc00eb4d998bfbc76767b098620990f2a805/annotation-1.1.0-sources.jar!/androidx/annotation/Nullable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sources/android-30/android/widget/Toast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="478" column="24" selection-start-line="478" selection-start-column="24" selection-end-line="478" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.1/7539531ecf9b6e082fcab195f0835d4f69ead95e/okhttp-3.9.1-sources.jar!/okhttp3/ResponseBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/AndroidSDK/sources/android-30/android/util/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="225" selection-start-line="225" selection-end-line="225" />
-          <folding>
-            <element signature="e#5655#5656#0" expanded="true" />
-            <element signature="e#5715#5716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/76f3c69879d3e01c082f49d8661c5590838148e1/retrofit-2.3.0-sources.jar!/retrofit2/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-          <folding>
-            <element signature="e#3816#3817#0" expanded="true" />
-            <element signature="e#3854#3855#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/registration/RegistrationResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/registration/RegistrationRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -608,29 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginErrorResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/RegistrationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registro.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="2159">
@@ -665,26 +669,6 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sensor.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#866#1106#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -695,59 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoErrorResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/76f3c69879d3e01c082f49d8661c5590838148e1/retrofit-2.3.0-sources.jar!/retrofit2/Callback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -755,47 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="115" column="33" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/SensorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -876,46 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/EventoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/GlobalClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/AndroidSDK/sources/android-30/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="6137" selection-start-line="6137" selection-end-line="6137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,21 +784,291 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/RegistrationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/GlobalClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/SensorActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="70" column="11" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2352#2497#0" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#4694#4729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sensor.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="52" lean-forward="true" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/ListaSincronizada.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/AlmacenarDatos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="78" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginErrorResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/login/LoginResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/EventoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/ActualizarTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/eventos/EventoErrorResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarTokenErrorResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/actualizar/token/ActualizarToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistroActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="95" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3037#3072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1611">
+          <caret line="126" column="62" lean-forward="true" selection-start-line="126" selection-start-column="62" selection-end-line="126" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/RegistrarEvento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="384">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1940#1997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/LogActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#555#697#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2633#4453#0" expanded="true" />
+            <element signature="e#2872#2907#0" expanded="true" />
+            <element signature="e#4452#4453#0" expanded="true" />
           </folding>
         </state>
       </provider>

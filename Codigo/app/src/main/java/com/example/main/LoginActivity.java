@@ -32,7 +32,7 @@ import java.io.IOException;
 public class LoginActivity extends AppCompatActivity {
 
     public static final String TAG = RegistroActivity.class.getSimpleName();
-
+    GlobalClass globalClass;
     Button btnLogin;
     Button btnRegistrar;
     EditText emailText;
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        globalClass = (GlobalClass)getApplicationContext();
 
         btnLogin = findViewById(R.id.LoginButton);
         btnRegistrar = findViewById(R.id.RegistrarButton);
@@ -96,14 +96,28 @@ public class LoginActivity extends AppCompatActivity {
                     if (response.isSuccessful()){
                         Log.i(TAG,"Se logueó de forma exitosa.");
 
-                        Thread evento = new Thread(new RegistrarEvento("Login","El usuario "+emailText.getText().toString()+"se logueo de forma exitosa.",getApplicationContext()));
+                        globalClass.setToken(response.body().getToken());
+                        globalClass.setRefresh_token(response.body().getToken_refresh());
+
+
+                        Retrofit retrofitEvento = new Retrofit.Builder()
+                                .addConverterFactory(GsonConverterFactory.create())
+                                .baseUrl(getString(R.string.retrofit_server)).build();
+
+                        //se crea un hilo que se va a encargar de enviar el mensaje al servidor.
+                        Thread evento = new Thread(new RegistrarEvento("Login","El usuario "+emailText.getText().toString()+" se logueo de forma exitosa.",getApplicationContext(),retrofitEvento));
                         evento.start();
 
+                        Thread almacenar = new Thread(new AlmacenarDatos(getApplicationContext()));
+                        almacenar.start();
+
+                        //comienza la pantalla main
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
 
                     }
                     else {
+                        //se muestra por pantalla el error y se lo muestra en el log
                         Gson gson = new Gson();
                         LoginErrorResponse loginErrorResponse = new LoginErrorResponse();
 
@@ -132,11 +146,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public boolean isOnline() {
+        //se verifica si hay conexion a internet
         boolean connected = false;
         ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
-            //we are connected to a network
             connected = true;
         }
         else
@@ -146,6 +160,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public int cargaBateria ()
     {
+        //se muestra la bateria
         try
         {
             IntentFilter batIntentFilter =
@@ -162,6 +177,8 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             return 0;
         }
+
+
     }
 
 }

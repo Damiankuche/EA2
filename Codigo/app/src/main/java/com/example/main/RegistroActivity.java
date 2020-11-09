@@ -102,15 +102,16 @@ public class RegistroActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<RegistrationResponse> call, Response<RegistrationResponse> response) {
                     CharSequence texto;
-                    String error;
 
                     if (response.isSuccessful()) {
+                        // se guarda el token y token_refresh en una clase global
                         GlobalClass globalClass = (GlobalClass)getApplicationContext();
                         globalClass.setToken(response.body().getToken());
                         globalClass.setRefresh_token(response.body().getToken_refresh());
                         texto = "Cuenta creada";
                         Toast.makeText(RegistroActivity.this, texto, Toast.LENGTH_LONG).show();
                         Log.i(TAG, globalClass.getToken());
+                        //se lanza el main activity y finaliza el activity de registro
                         Intent intent = new Intent(RegistroActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
