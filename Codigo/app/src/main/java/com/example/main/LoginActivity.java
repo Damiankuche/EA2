@@ -31,7 +31,7 @@ import java.io.IOException;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public static final String TAG = RegistroActivity.class.getSimpleName();
+    public static final String TAG = LoginActivity.class.getSimpleName();
     GlobalClass globalClass;
     Button btnLogin;
     Button btnRegistrar;
@@ -48,6 +48,10 @@ public class LoginActivity extends AppCompatActivity {
         btnRegistrar = findViewById(R.id.RegistrarButton);
         emailText = findViewById(R.id.emailText);
         passText = findViewById(R.id.PassText);
+
+        Thread almacenar = new Thread(new AlmacenarDatos(getApplicationContext()));
+        almacenar.start();
+        globalClass.setRunning(true);
 
         /*mostrar nivel de batería*/
         Toast.makeText(getApplicationContext(),
@@ -108,8 +112,8 @@ public class LoginActivity extends AppCompatActivity {
                         Thread evento = new Thread(new RegistrarEvento("Login","El usuario "+emailText.getText().toString()+" se logueo de forma exitosa.",getApplicationContext(),retrofitEvento));
                         evento.start();
 
-                        Thread almacenar = new Thread(new AlmacenarDatos(getApplicationContext()));
-                        almacenar.start();
+                        Thread agregar = new Thread(new CargarDatoLista("El usuario "+emailText.getText().toString()+" se logueo de forma exitosa.",getApplicationContext()));
+                        agregar.start();
 
                         //comienza la pantalla main
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);

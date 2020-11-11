@@ -42,7 +42,7 @@ public class RegistrarEvento  implements Runnable {
         request.setType_events(type_events);
         request.setDescription(description);
 
-        GlobalClass globalClass = (GlobalClass)context;
+        final GlobalClass globalClass = (GlobalClass)context;
 
         EventoService eventoService = retrofit.create(EventoService.class);
 
@@ -55,6 +55,8 @@ public class RegistrarEvento  implements Runnable {
 
                 if (response.isSuccessful()) {
                     Toast.makeText(context, "Evento "+request.getType_events() +" registrado.", Toast.LENGTH_SHORT).show();
+                    Thread agregar = new Thread(new CargarDatoLista(description,globalClass));
+                    agregar.start();
                 } else {
 
                     Gson gson = new Gson();

@@ -1,7 +1,7 @@
 package com.example.main;
 
 import android.content.Context;
-import android.widget.Toast;
+import android.util.Log;
 
 
 import java.io.OutputStreamWriter;
@@ -23,16 +23,18 @@ public class AlmacenarDatos implements Runnable {
 
         GlobalClass globalClass = (GlobalClass)context;
         try {
-            OutputStreamWriter file = new OutputStreamWriter( globalClass.openFileOutput(nombre,globalClass.MODE_PRIVATE));
-            while(globalClass.isRunning()){
-                texto = (String) (globalClass.getLista().getDato());
-                file.write(DateFormat.getDateTimeInstance().format(new Date()) +" - "+ texto);
-            }
-            file.flush();
-            file.close();
+                OutputStreamWriter file = new OutputStreamWriter(globalClass.openFileOutput(nombre,globalClass.MODE_APPEND));
+                while (globalClass.isRunning()) {
+                    texto = (String) (globalClass.getLista().getDato());
+                    if(texto != null)
+                        file.write(DateFormat.getDateTimeInstance().format(new Date()) + " - " + texto+"\n");
+                }
+                file.flush();
+                file.close();
+
         }
         catch (Exception e){
-            Toast.makeText(context,e.getMessage(),Toast.LENGTH_SHORT);
+            Log.e("Almacenar datos",e.getMessage());
         }
 
     }

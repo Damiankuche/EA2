@@ -7,21 +7,39 @@ import java.util.LinkedList;
 public class ListaSincronizada {
     private LinkedList lista = new LinkedList();
 
-    public synchronized void addDato(Object dato){
-        lista.add(dato);
-        lista.notify();
-    }
-
-    public synchronized Object getDato(){
-        if (lista.size()==0){
+    public void addDato(Object dato) {
+        synchronized (lista) {
             try {
-                wait();
-            } catch (InterruptedException e) {
+                lista.add(dato);
+                lista.notify();
+            } catch (Exception e) {
                 Log.e("Error en la lista", e.getMessage());
             }
         }
-        Object dato = lista.get(0);
-        lista.remove(0);
-        return dato;
     }
+
+    public void despertar(){
+        synchronized (lista){
+            lista.notify();
+        }
+    }
+
+    public Object getDato(){
+        synchronized (lista) {
+            if (lista.size() == 0) {
+                try {
+                    lista.wait();
+                } catch (InterruptedException e) {
+                    Log.e("Error en la lista", e.getMessage());
+                }
+            }
+            if (lista.size() == 0)
+                return null;
+            Object dato = lista.get(0);
+            lista.remove(0);
+            return dato;
+        }
+    }
+
+
 }

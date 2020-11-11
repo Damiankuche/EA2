@@ -1,5 +1,6 @@
 package com.example.main;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,8 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.main.actualizar.token.ActualizarTokenErrorResponse;
 import com.example.main.actualizar.token.ActualizarTokenResponse;
-import com.example.main.eventos.EventoErrorResponse;
 import com.example.main.services.ActualizarTokenService;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -34,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     Handler handler = new Handler();
     //TODO implementar Firebase
     private final int TIEMPO = 1740000; // 29 minutos
+
+    public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -69,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        actualizarToken();
+            actualizarToken();
 
     }
 
@@ -85,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         globalClass.setRunning(false);
 
     }
+
 
 
     public void actualizarToken(){
@@ -108,8 +115,10 @@ public class MainActivity extends AppCompatActivity {
                             globalClass.setToken(response.body().getToken());
                             globalClass.setRefresh_token(response.body().getToken_refresh());
 
-                            Toast.makeText(getApplicationContext(),"Token actualizado",Toast.LENGTH_LONG);
+                            Toast.makeText(globalClass,"Token actualizado",Toast.LENGTH_LONG);
                             Log.i("Actualizar token","El token fue actualizado de forma correcta.");
+                            Thread agregar = new Thread(new CargarDatoLista("Se actualizó el token.",globalClass));
+                            agregar.start();
 
                         } else {
 
