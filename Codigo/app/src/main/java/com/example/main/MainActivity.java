@@ -16,10 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.main.actualizar.token.ActualizarTokenErrorResponse;
 import com.example.main.actualizar.token.ActualizarTokenResponse;
 import com.example.main.services.ActualizarTokenService;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
 import com.google.gson.Gson;
 
 import java.io.IOException;
