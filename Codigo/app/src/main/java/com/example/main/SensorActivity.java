@@ -34,10 +34,11 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
     SensorManager sm;
     CheckBox proximidadCheck;
     TextView proximidadText;
-    private long last_update = 0, last_movement = 0;
     private float prevX = 0, prevY = 0, prevZ = 0;
     private float curX = 0, curY = 0, curZ = 0;
     private Boolean realizoCambio;
+    long currentTime;
+    long lastTime;
 
 
     @Override
@@ -49,6 +50,8 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
         setContentView(R.layout.activity_sensor);
         realizoCambio = false;
         GlobalClass globalClass = (GlobalClass)getApplicationContext();
+        currentTime = System.currentTimeMillis();
+        lastTime = currentTime;
 
         sm.registerListener(this, acSensor, SensorManager.SENSOR_DELAY_GAME);
         sm.registerListener(this, prSensor, SensorManager.SENSOR_DELAY_GAME);
@@ -143,45 +146,18 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
                     case Sensor.TYPE_ACCELEROMETER:
                         if (acelerometroCheck.isChecked()) {
 
-
-
                             curX = event.values[0];
                             curY = event.values[1];
                             curZ = event.values[2];
 
-                            if (prevX == 0 && prevY == 0 && prevZ == 0) {
-                                prevX = curX;
-                                prevY = curY;
-                                prevZ = curZ;
+                            aceletrometroXText.setText("Acelerómetro X: " + curX);
+                            aceletrometroYText.setText("Acelerómetro Y: " + curY);
+                            aceletrometroZText.setText("Acelerómetro Z: " + curZ);
 
-                                aceletrometroXText.setText("Acelerómetro X: " + curX);
-                                aceletrometroYText.setText("Acelerómetro Y: " + curY);
-                                aceletrometroZText.setText("Acelerómetro Z: " + curZ);
-                            }
-
-
-                            if(Math.abs(prevX-curX)>0.20){
-                                aceletrometroXText.setText("Acelerómetro X: " + curX);
-                                prevX = curX;
-                                realizoCambio = true;
-                            }
-
-                            if(Math.abs(prevY-curY)>0.20){
-                                aceletrometroYText.setText("Acelerómetro Y: " + curY);
-                                prevY = curY;
-                                realizoCambio = true;
-                            }
-
-                            if(Math.abs(prevZ-curZ)>0.20){
-                                aceletrometroZText.setText("Acelerómetro Z: " + curZ);
-                                prevZ = curZ;
-                                realizoCambio = true;
-                            }
-
-                            if(realizoCambio){
+                            currentTime = System.currentTimeMillis();
+                            if(currentTime - lastTime > 3000){
                                 Thread evAcel = new Thread(new RegistrarEvento("Sensor acelerometro", "X: "+curX+" Y: "+curY+" Z: "+curZ, getApplicationContext(), retrofitEvento));
                                 evAcel.start();
-                                realizoCambio = false;
                             }
 
                         } else {

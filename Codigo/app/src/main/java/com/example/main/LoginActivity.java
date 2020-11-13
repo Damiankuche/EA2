@@ -129,11 +129,14 @@ public class LoginActivity extends AppCompatActivity {
                             loginErrorResponse = gson.fromJson(
                                     response.errorBody().string(),
                                     LoginErrorResponse.class);
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                            Toast.makeText(LoginActivity.this, loginErrorResponse.getMsg(), Toast.LENGTH_LONG).show();
+                            Log.e(TAG,loginErrorResponse.getMsg());
+                        } catch (Exception e) {
+                            Log.e(TAG,e.getMessage());
+                            Toast.makeText(LoginActivity.this,"Error con la comunicación con el servidor.",Toast.LENGTH_SHORT).show();
+
                         }
-                        Toast.makeText(LoginActivity.this, loginErrorResponse.getMsg(), Toast.LENGTH_LONG).show();
-                        Log.e(TAG,loginErrorResponse.getMsg());
+
                     }
                 }
 
@@ -145,6 +148,8 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, texto, Toast.LENGTH_LONG).show();
                 }
             });
+        } else {
+            Toast.makeText(LoginActivity.this, "No tienes conexión a internet.", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -68,8 +68,8 @@ public class RegistrarEvento  implements Runnable {
 
                         Toast.makeText(context, eventoErrorResponse.getMsg(), Toast.LENGTH_SHORT).show();
                         Log.e(TAG,eventoErrorResponse.getMsg());
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    } catch (Exception e) {
+                        Log.e(TAG,e.getMessage());
                     }
                 }
             }
