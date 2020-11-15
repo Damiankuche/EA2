@@ -158,6 +158,7 @@ public class SensorActivity extends AppCompatActivity  implements SensorEventLis
                             if(currentTime - lastTime > 3000){
                                 Thread evAcel = new Thread(new RegistrarEvento("Sensor acelerometro", "X: "+curX+" Y: "+curY+" Z: "+curZ, getApplicationContext(), retrofitEvento));
                                 evAcel.start();
+                                lastTime = currentTime;
                             }
 
                         } else {
